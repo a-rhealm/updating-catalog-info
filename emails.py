@@ -23,7 +23,7 @@ def generate_email(sender, recipient, subject, body, attachment_path):
 					filename = attachment_filename)
 	return message
 
-def send_email(message)
+def send_email(message):
 	mail_server = smtplib.SMTP('localhost')
 	mail_server.send_message(message)
 	mail_server.quit()
